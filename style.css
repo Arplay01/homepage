@@ -1,0 +1,31 @@
+body {
+    background: #FFC6AC;
+    color: #002a32ff;
+}
+
+h1 {
+    color: #571616;
+    font-weight: 900;
+}
+
+.main {
+    max-width: 50rem;
+    margin: auto;
+}
+
+.welcome-header {
+    text-align: center;
+}
+
+.notes-issue {
+    background-color: #eba6a9ff;
+}
+
+.issue-topic {
+    text-decoration: line-through;
+}
+
+.issue-picture {
+    max-width: 30rem;
+}
+
