@@ -1,38 +1,75 @@
 body {
-    background: #FFC6AC;
-    color: #002a32ff;
+  background: #ffc6ac;
+  color: #002a32ff;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
-    color: #571616;
-    font-weight: 900;
+  color: #571616;
+  font-weight: 900;
 }
 
 .main {
-    max-width: 50rem;
-    margin: auto;
+  max-width: 50rem;
+  margin: auto;
 }
 
 .welcome-header {
-    text-align: center;
+  text-align: center;
 }
 
 .notes-issue {
-    background-color: #eba6a9ff;
+  background-color: #eba6a9ff;
 }
 
 .issue-topic {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .issue-picture {
-    max-width: 30rem;
+  max-width: 30rem;
 }
 
 code {
-    background-color: #ededed;
-    border: 1px solid #111111;
-    border-radius: 3px;
-    color: #393939;
-    padding: 5px;
+  background-color: #ededed;
+  border: 1px solid #111111;
+  border-radius: 3px;
+  color: #393939;
+  padding: 5px;
+}
+
+.box-model {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 50vw;
+  padding: 30px 15px;
+  margin: 20px auto;
+  border: 1px solid #571616;
+  border-radius: 10px;
+  line-height: 1.5;
+}
+
+.box-model__photo {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 0 20px 0 0;
+  border-radius: 5px;
+}
+
+.box-model__photo2 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.box-model__logo {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
 }
