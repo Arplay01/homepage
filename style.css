@@ -29,3 +29,10 @@ h1 {
     max-width: 30rem;
 }
 
+code {
+    background-color: #ededed;
+    border: 1px solid #111111;
+    border-radius: 3px;
+    color: #393939;
+    padding: 5px;
+}
