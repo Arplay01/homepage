@@ -6,31 +6,31 @@ body {
   margin: 0;
 }
 
-h1 {
-  color: #571616;
-  font-weight: 900;
-}
-
 .main {
   padding-top: 60px;
   max-width: 50rem;
   margin: auto;
 }
 
-.welcome-header {
-  text-align: center;
-}
+.welcome {
+    text-align: center;
+  }
 
-.notes-issue {
+.welcome__title {
+    color: #571616;
+    font-weight: 900;
+  }
+
+.note__container {
   background-color: #eba6a9ff;
 }
 
-.issue-topic {
+.note__title {
   text-decoration: line-through;
   margin: 0 0 20px 0;
 }
 
-.issue-picture {
+.note__picture--phone {
   max-width: 30rem;
 }
 
@@ -42,7 +42,7 @@ code {
   padding: 5px;
 }
 
-.box-model {
+.note__container--box-model {
   position: relative;
   box-sizing: border-box;
   max-width: 65vw;
@@ -53,7 +53,7 @@ code {
   line-height: 1.5;
 }
 
-.box-model__photo {
+.note__picture--box-model {
     display: block;
   box-sizing: border-box;
   width: 100px;
@@ -63,7 +63,7 @@ code {
   border-radius: 5px;
 }
 
-.box-model__photo2 {
+.note__picture--box-model2 {
   width: 50px;
   height: 50px;
   position: absolute;
@@ -71,7 +71,7 @@ code {
   right: 5px;
 }
 
-.box-model__logo {
+.note__picture--box-model-logo {
   position: fixed;
   top: 5px;
   right: 5px;
@@ -85,9 +85,11 @@ code {
   top: 0;
   left: 0;
   width: 100%;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
 }
 
-.top-navigation {
+.navigation {
   padding: 15px 20px;
 }
+
+.navigation__link
