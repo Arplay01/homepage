@@ -1,4 +1,4 @@
-alert('Hello!')
+/* alert('Hello!') */
 console.log('hello! nice to see you')
 
 const x = 25
