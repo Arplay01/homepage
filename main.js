@@ -30,9 +30,3 @@ noteSucceedDescription.innerHTML =
 const title = document.querySelector(".note__title--js");
 title.innerHTML = "14.08.2020 have fun (added by js)";
 
-const element = (hello, name) => {
-    document.querySelector(".note__description--js4");
-    innerHTML = `Test ${hello}, i jeszcze ${name}`;
-}
-
-element(20,"Siema")
