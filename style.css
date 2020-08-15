@@ -21,7 +21,7 @@ body {
     font-weight: 900;
   }
 
-.note__container {
+.note {
   background-color: #eba6a9ff;
 }
 
@@ -42,7 +42,7 @@ code {
   padding: 5px;
 }
 
-.note__container--box-model {
+.note--box-model {
   position: relative;
   box-sizing: border-box;
   max-width: 65vw;
