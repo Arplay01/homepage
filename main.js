@@ -77,3 +77,15 @@ const greet = (dogName, dogAge, addedAge, futureAge) => {
 }
 
 greet('Nel', 2, 4)
+
+/* OBJECT */
+
+const nel = {
+    age: 2,
+    firstName: 'Nel',
+    lastName: 0,
+    weight: 10,
+   /*  weightWithMetrics: `${nel.weight}kg`, */
+}
+
+console.log(nel.weight)
