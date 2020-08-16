@@ -30,3 +30,33 @@ noteSucceedDescription.innerHTML =
 const title = document.querySelector(".note__title--js");
 title.innerHTML = "14.08.2020 have fun (added by js)";
 
+/* const gree142 = (name, age) => {
+    alert(`Hello, my name is ${name} i mam ${age}`);
+    console.log(`Hello, my name is ${name} i mam ${age}`);
+} 
+
+gree142('Arek', 24) */
+
+function createContent(querySelectorContent, content) {
+    const element = document.querySelector(querySelectorContent)
+    element.innerHTML = content
+}
+
+createContent('.note__description--js4','Hello World (contend created by function in JS) First function in my life 🍎')
+
+/* const calculate = (myNumber) => {
+    return myNumber*7
+
+}
+
+calculate(1)
+console.log(myNumber) */
+
+const specialSection = (querySelectorContent, content) => {
+    const special = document.querySelector(querySelectorContent)
+    special.innerHTML = content
+}
+
+specialSection('.special__heading--js','To jest test i DZIAŁA')
+specialSection('.special__description--js', 'Funkcja dodana przy pomocy => (Fat) arrow function!🔥')
+specialSection('.special__description--js2', 'Mega mnie to jara i daje dużo przyjemności! 🔊')
