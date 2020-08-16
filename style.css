@@ -101,13 +101,13 @@ code {
     /* border: 0.5px solid #3333336e; */
     border-radius: 20px;
     padding: 20px;
-    box-shadow: 12px 12px 20px 5px #d9a892, 
-    -12px -12px 20px 5px #ffe4c6;
+    box-shadow: 6px 6px 16px 0px #d9a892, 
+    -6px -6px 26px 0px #ffe4c6;
 }
 
 .note--box-model2:hover {
-    box-shadow: inset 12px 12px 30px #d9a892, 
-    inset -12px -12px 30px #ffe4c6;
+    box-shadow: inset 6px 6px 16px #d9a892, 
+    inset -6px -6px 26px #ffe4c6;
 }
 
 .navigation__link

@@ -44,14 +44,6 @@ function createContent(querySelectorContent, content) {
 
 createContent('.note__description--js4','Hello World (contend created by function in JS) First function in my life 🍎')
 
-/* const calculate = (myNumber) => {
-    return myNumber*7
-
-}
-
-calculate(1)
-console.log(myNumber) */
-
 const specialSection = (querySelectorContent, content) => {
     const special = document.querySelector(querySelectorContent)
     special.innerHTML = content
@@ -60,3 +52,28 @@ const specialSection = (querySelectorContent, content) => {
 specialSection('.special__heading--js','To jest test i DZIAŁA')
 specialSection('.special__description--js', 'Funkcja dodana przy pomocy => (Fat) arrow function!🔥')
 specialSection('.special__description--js2', 'Mega mnie to jara i daje dużo przyjemności! 🔊')
+
+/* const calculate = (myNumber) => {
+    return myNumber*7
+
+}
+
+calculate(1)
+console.log(myNumber) */
+
+function calculate(myNumber) {
+    console.log(`dostałam ${myNumber}`)
+    myNumber = myNumber*7
+    return `Mój wynik to ${myNumber}`
+}
+const myResult = calculate(dogAge);
+console.log(myResult);
+
+console.log(dogAge) 
+
+const greet = (dogName, dogAge, addedAge, futureAge) => {
+    futureAge = dogAge + addedAge;
+    console.log(`Cześć jestem ${dogName} i mam ${dogAge}. A za ${addedAge} lata będę miała ${futureAge}`)
+}
+
+greet('Nel', 2, 4)
