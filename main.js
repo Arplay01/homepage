@@ -38,20 +38,29 @@ title.innerHTML = "14.08.2020 have fun (added by js)";
 gree142('Arek', 24) */
 
 function createContent(querySelectorContent, content) {
-    const element = document.querySelector(querySelectorContent)
-    element.innerHTML = content
+  const element = document.querySelector(querySelectorContent);
+  element.innerHTML = content;
 }
 
-createContent('.note__description--js4','Hello World (contend created by function in JS) First function in my life 🍎')
+createContent(
+  ".note__description--js4",
+  "Hello World (contend created by function in JS) First function in my life 🍎"
+);
 
 const specialSection = (querySelectorContent, content) => {
-    const special = document.querySelector(querySelectorContent)
-    special.innerHTML = content
-}
+  const special = document.querySelector(querySelectorContent);
+  special.innerHTML = content;
+};
 
-specialSection('.special__heading--js','To jest test i DZIAŁA')
-specialSection('.special__description--js', 'Funkcja dodana przy pomocy => (Fat) arrow function!🔥')
-specialSection('.special__description--js2', 'Mega mnie to jara i daje dużo przyjemności! 🔊')
+specialSection(".special__heading--js", "To jest test i DZIAŁA");
+specialSection(
+  ".special__description--js",
+  "Funkcja dodana przy pomocy => (Fat) arrow function!🔥"
+);
+specialSection(
+  ".special__description--js2",
+  "Mega mnie to jara i daje dużo przyjemności! 🔊"
+);
 
 /* const calculate = (myNumber) => {
     return myNumber*7
@@ -62,30 +71,45 @@ calculate(1)
 console.log(myNumber) */
 
 function calculate(myNumber) {
-    console.log(`dostałam ${myNumber}`)
-    myNumber = myNumber*7
-    return `Mój wynik to ${myNumber}`
+  console.log(`dostałam ${myNumber}`);
+  myNumber = myNumber * 7;
+  return `Mój wynik to ${myNumber}`;
 }
 const myResult = calculate(dogAge);
 console.log(myResult);
 
-console.log(dogAge) 
+console.log(dogAge);
 
-const greet = (dogName, dogAge, addedAge, futureAge) => {
-    futureAge = dogAge + addedAge;
-    console.log(`Cześć jestem ${dogName} i mam ${dogAge}. A za ${addedAge} lata będę miała ${futureAge}`)
-}
+const greet = (dogName, dogAge, addedAge) => {
+  futureAge = dogAge + addedAge;
+  console.log(
+    `Cześć jestem ${dogName} i mam ${dogAge}. A za ${addedAge} lata będę miała ${futureAge}`
+  );
+};
 
-greet('Nel', 2, 4)
+greet("Nel", 2, 4);
 
 /* OBJECT */
 
 const nel = {
-    age: 2,
-    firstName: 'Nel',
-    lastName: 0,
-    weight: 10,
-   /*  weightWithMetrics: `${nel.weight}kg`, */
+  age: 2,
+  firstName: "Nel",
+  lastName: 0,
+  weight: 10,
+  /*  weightWithMetrics: `${nel.weight}kg`, */
+  sex: "female",
+  isHungry: true,
+};
+
+console.log(nel);
+console.log(nel.weight);
+
+function js5(querySelectorContent, content) {
+  const paragraph = document.querySelector(querySelectorContent);
+  paragraph.innerHTML = content;
 }
 
-console.log(nel.weight)
+js5(
+  ".note__description--js5",
+  "Czy aby na pewno??? Monotonia niekoniecznie, ale rutyna jest jak najbardziej wskazana. Jak ma się gram ochoty, to monotonię można łatwo pożegnać. Urozmaicając sobie cokolwiek bym nie robił. :D Poza tym trzeba regularnie i wytrwale pracować."
+);
