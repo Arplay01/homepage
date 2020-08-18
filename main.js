@@ -135,3 +135,35 @@ js6(
   ".note__description--js6",
   `TOP ${contenthinio.topPriority}, & ${contenthinio.important.sleep} & ${contenthinio.important.food} & ${contenthinio.important.regeneration}`
 );
+
+function greetAgain(name) {
+  console.log(`Hello my friend ${name}! Very important thing is "${contenthinio.important.sleep}" in Polish. That's mean sleep.`)
+}
+
+greetAgain('Arek');
+
+if (0 ==0) {
+  console.log('To jest prawda');
+};
+
+if ('test' > 0) {
+  console.log('prawda')
+}
+if (!('test' > 0)) {
+    console.log('nie prawda')
+}
+
+if ('test' > 0) {
+  console.log('prawda')
+}
+else {
+    console.log('nie prawda po raz drugi (with else)')
+}
+
+if (2 === '2') {
+  console.log('PRAWDA')
+} else if (2 !== '2') {
+  console.log('Prawda druga')
+} else {
+  console.log('a może jednak nie prawda - pssikus! 😎')
+}
