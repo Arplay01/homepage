@@ -113,3 +113,25 @@ js5(
   ".note__description--js5",
   "Czy aby na pewno??? Monotonia niekoniecznie, ale rutyna jest jak najbardziej wskazana. Jak ma się gram ochoty, to monotonię można łatwo pożegnać. Urozmaicając sobie cokolwiek bym nie robił. :D Poza tym trzeba regularnie i wytrwale pracować."
 );
+
+const contenthinio = {
+  important: {
+    sleep: "sen",
+    food: "jedzenie",
+    regeneration: "regeneracja",
+    movment: "ruch i ćwiczenia fizyczne",
+  },
+  topPriority: "Codzienne pisanie kodu!",
+};
+
+console.log(contenthinio);
+
+function js6(contentQuerySelector, contenthinio) {
+  const content = document.querySelector(contentQuerySelector);
+  content.innerHTML = contenthinio;
+}
+
+js6(
+  ".note__description--js6",
+  `TOP ${contenthinio.topPriority}, & ${contenthinio.important.sleep} & ${contenthinio.important.food} & ${contenthinio.important.regeneration}`
+);
