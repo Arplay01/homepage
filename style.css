@@ -137,3 +137,8 @@ code {
 .footer {
  margin: 70px;
 }
+
+.form {
+  border: 2px solid rgb(71, 11, 11);
+  padding: 16px;
+}

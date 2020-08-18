@@ -105,8 +105,73 @@
             </article>
             <article class="note">
                 <h3 class="note__title">18.08.2020 <span class="note__description--js6"></span></h3>
-                <p class="note__description">pracując, ucząc się <strong>PRIORYTETEM jest dbanie o swoje zdrowie, energię i samopoczucie</strong> - dlatego w nauce programowania najważniejszy jest dobry sen, jedzenie, odpoczynek fizyczny i mentalny, ruch fizyczny.</p>
-                To daje możliwość wysokiej koncentracji i lepszego przyswajania wiedzy, oraz myślenia logicznego i krytycznego.
+                <p class="note__description">pracując, ucząc się <strong>PRIORYTETEM jest dbanie o swoje zdrowie,
+                        energię i samopoczucie</strong> - dlatego w nauce programowania najważniejszy jest dobry sen,
+                    jedzenie, odpoczynek fizyczny i mentalny, ruch fizyczny.
+                    To daje możliwość wysokiej koncentracji i lepszego przyswajania wiedzy, oraz myślenia logicznego i
+                    krytycznego.</p>
+            </article>
+            <article class="note">
+                <h3 class="note__title">Froms practice</h3>
+                <p class="note__description">lecimy z tematem</p>
+                <form class="form" action="">
+                    <p>
+                        <label for="firstName">Imię</label>
+                        <input type="text" id="firstName" name="fistName" placeholder="Jan">
+                    </p>
+                    <p>
+                        <label>Nazwisko
+                            <input type="text" name="lastName" placeholder="Kowalski"></label>
+                    </p>
+                    <p>
+                        <label>email
+                            <input type="email" name="email" value="example@gmail.com"></label>
+                    </p>
+                    <p>
+                        <label>hasło
+                            <input type="password" name="password" required><i>(required)</i></label>
+                    </p>
+                    <fieldset>
+                        <legend>Checkbox</legend>
+
+                        <p><label>
+                                <input type="checkbox" name="agreement" value="test1" required>Test1 <i>(required)</i></label>
+                        </p>
+                        <p><label>
+                                <input name="agreement" type="checkbox" id="2" value="test2">test2</label>
+                        </p>
+                        <p><label>
+                                <input name="agreement" type="checkbox" id="3" value="test3">test3</label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>radio</legend>
+                        <p><label>
+                                <input type="radio" name="oneToRuleThemAll" id="1" value="opt1">option 1</label>
+                        </p>
+                        <p><label>
+                                <input type="radio" name="oneToRuleThemAll" id="2" value="opt2">option 2</label>
+                        </p>
+                        <p><label>
+                                <input type="radio" name="oneToRuleThemAll" id="3" value="opt3">option 3</label>
+                        </p>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>range</legend>
+                        <p><label>
+                                <input class="range--js" type="range" min="1" max="10" step="1" name="range"><span
+                                    class="range-content--js"></span></label>
+                        </p>
+                    </fieldset>
+                    <p><label>Avatar
+                            <input type="file" name="file"></label>
+                    </p>
+
+                    <button type="submit">Wyślij</button>
+                </form>
+
 
             </article>
 

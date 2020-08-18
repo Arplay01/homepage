@@ -147,23 +147,58 @@ if (0 ==0) {
 };
 
 if ('test' > 0) {
-  console.log('prawda')
+  console.log('prawda');
 }
 if (!('test' > 0)) {
-    console.log('nie prawda')
+    console.log('nie prawda');
 }
 
 if ('test' > 0) {
-  console.log('prawda')
+  console.log('prawda');
 }
 else {
-    console.log('nie prawda po raz drugi (with else)')
+    console.log('nie prawda po raz drugi (with else)');
 }
 
 if (2 === '2') {
-  console.log('PRAWDA')
+  console.log('PRAWDA');
 } else if (2 !== '2') {
-  console.log('Prawda druga')
+  console.log('Prawda druga');
 } else {
-  console.log('a może jednak nie prawda - pssikus! 😎')
+  console.log('a może jednak nie prawda - pssikus! 😎');
 }
+
+if ((2 == '2') && (1 == 1)) {
+  console.log('Czy to "i" && zadziała??');
+} else {
+  console.log('jednak działa, ale teraz jest "else');
+}
+
+const somebody = 'somebodya';
+
+if (('somebody' == somebody) || (2 > 1)) {
+  console.log('sama prawda, albo częsciowa za pomocą ||');
+} else {
+  console.log(somebody)
+}
+
+switch (13+4) {
+  case 17: console.log('17 to jest ta liczba z pomocą "switch"');
+  break;
+  case 1: console.log('1 to jest ta liczba z pomocą "switch"');
+  break;
+  default:
+    console.log('żadne z tych nie jest prawdą. Switch');
+}
+
+(2 > 3) ? console.log(true) : console.log(false);
+
+const result = (2 !== '2') ? true : false;
+
+console.log(result);
+/* Taka tam zabawa xD */
+const myRange = document.querySelector('.range--js');
+console.log(myRange.value)
+const rangeContent = document.querySelector('.range-content--js');
+rangeContent.innerHTML = `wybierasz ${myRange.value}`;
+
