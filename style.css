@@ -147,11 +147,41 @@ code {
 .grid {
   margin: 16px;
   border: 3px solid #3333;
+  box-sizing: border-box;
   display: grid;
+  grid-template-columns: 1fr 70px 1fr;
+  grid-template-rows:100px 200px 50px 50px;
+  column-gap: 16px;
+  row-gap: 16px;
+  padding: 16px;
+  grid-template-areas: "header header header"
+  "main . aside"
+  "footer footer footer"
+  "footer2 footer2 footer2";
 
 }
 
 .grid__item {
-  border: 2px solid #3333;
+  border: 3px solid #3333;
 }
 
+.grid__item--header {
+  background: #3333;
+  grid-area: header;
+}
+
+.grid__item--main {
+grid-area: main;
+}
+
+.grid__item--aside {
+  grid-area: aside;
+}
+
+.grid__item--footer {
+grid-area: footer;
+}
+
+.grid__item--footer2 {
+grid-area: footer2;
+}
