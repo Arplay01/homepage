@@ -202,3 +202,5 @@ console.log(myRange.value)
 const rangeContent = document.querySelector('.range-content--js');
 rangeContent.innerHTML = `wybierasz ${myRange.value}`;
 
+const js7 = document.querySelector('.note__description--js7');
+js7.innerHTML = 'Dalej ciśniemy tabele';
