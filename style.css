@@ -218,3 +218,8 @@ grid-area: footer2;
   }
   
 }
+
+.test--js4 {
+  background-color: teal;
+  font-size: 20px;
+}

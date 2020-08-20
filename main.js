@@ -231,5 +231,23 @@ const anotherButton = document.querySelector('.action--js3');
 
 anotherButton.addEventListener('click', (e) /* Może być bez "e" */=> {
   const change = document.querySelector('.note__description--click3');
-  change.innerHTML = 'lecimy z tematem'
+  change.innerHTML = '<strong>lecimy</strong> z tematem'
 })
+
+const click4 = document.querySelector('.action--js4');
+
+click4.addEventListener('click', () => {
+  const click44 = document.querySelector('.note__description--click4');
+click44.classList.add('note__description--click4','test--js4');
+click44.innerHTML = 'hello world zmieniona treść i classy!';
+console.log('zmieniłeś klasę i treść')
+})
+
+/*   function classChanger() {
+  const click44 = document.querySelector('.note__description--click4');
+click44.classList.add('note__description--click4','test--js4');
+console.log('zmieniłeś klasę')
+  }
+
+click4.addEventListener('click', classChanger) */
+
