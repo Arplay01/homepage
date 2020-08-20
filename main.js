@@ -204,3 +204,32 @@ rangeContent.innerHTML = `wybierasz ${myRange.value}`;
 
 const js7 = document.querySelector('.note__description--js7');
 js7.innerHTML = 'Dalej ciśniemy tabele';
+
+const button = document.querySelector('.action--js');
+
+
+function buttonChange() {
+const myButton = document.querySelector('.note__description--click');
+myButton.innerHTML = 'Właśnie nauczyłem się zmieniać paragraf przez eventy w JS';
+console.log('kliknąłeś')
+}
+
+button.addEventListener('click', buttonChange);
+console.log(button);
+
+const button2 = document.querySelector('.action--js2');
+console.log(button2)
+
+const change2 = () => {
+  const change = document.querySelector('.note__description--click2');
+  change.innerHTML = 'tym razem funkcja strzałkowa!! <3'
+}
+
+button2.addEventListener('mouseleave', change2);
+
+const anotherButton = document.querySelector('.action--js3');
+
+anotherButton.addEventListener('click', (e) /* Może być bez "e" */=> {
+  const change = document.querySelector('.note__description--click3');
+  change.innerHTML = 'lecimy z tematem'
+})

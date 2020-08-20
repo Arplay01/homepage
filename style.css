@@ -149,7 +149,7 @@ code {
   border: 3px solid #3333;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 1fr 70px 1fr;
+  grid-template-columns: 2fr 30px 1fr;
   grid-template-rows:100px 200px 50px 50px;
   column-gap: 16px;
   row-gap: 16px;
