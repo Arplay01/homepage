@@ -251,3 +251,12 @@ console.log('zmieniłeś klasę')
 
 click4.addEventListener('click', classChanger) */
 
+/* HAMBURGER1 TEST */
+
+const hamburger1 = document.querySelector('.hamburger1--js'); 
+
+hamburger1.addEventListener('click', () => {
+  const hamburgerShow = document.querySelector('.navigation1--js');
+  hamburgerShow.classList.toggle('navigation1--off');
+})
+

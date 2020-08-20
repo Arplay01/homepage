@@ -30,6 +30,7 @@ body {
 .note {
   background-color: #eba6a9ff;
   margin: 20px 0;
+  
 }
 
 .note__title {
@@ -222,4 +223,52 @@ grid-area: footer2;
 .test--js4 {
   background-color: teal;
   font-size: 20px;
+}
+
+/* HAMBURGER1 TEST */
+
+.note1 {
+height: 300px;
+}
+
+.container1 {
+  position: relative;
+}
+
+.hamburger1 {
+  background-color: rgba(51, 51, 51, 0);
+  font-size: 30px;
+  border: none;
+  z-index: 10;
+}
+
+.navigation1 {
+  border: 3px solid #3333;
+  box-sizing: border-box;
+  line-height: 2;
+  max-width: fit-content;
+  padding: 32px;
+ /*  position: absolute;
+  top: 0;
+  left: 0; */
+}
+
+.navigation1--off {
+  display: none;
+}
+
+.navigation1__list {
+  list-style: none;
+  margin: 20px 0 0 0;
+  padding: 0px;
+}
+
+.navigation1__link {
+  text-decoration: none;
+  color: #571616;
+}
+
+.navigation1__link:hover {
+  border-bottom: 1px solid #721f1f;
+  color: #721f1f;
 }
