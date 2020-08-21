@@ -262,3 +262,12 @@ hamburger1.addEventListener("click", () => {
   const hamburgerShow = document.querySelector(".navigation1--js");
   hamburgerShow.classList.toggle("navigation1--off");
 });
+
+const hamburgerButton = document.querySelector('.hamburger-button--js');
+
+hamburgerButton.addEventListener('click', function () {
+  const navigation = document.querySelector('.navigation--js');
+  navigation.classList.toggle('navigation--off');
+  const navigationLogo = document.querySelector('.note__picture--box-model-logo')
+  navigationLogo.classList.toggle('note__picture--box-model-logo--js')
+});
