@@ -137,111 +137,114 @@ js6(
 );
 
 function greetAgain(name) {
-  console.log(`Hello my friend ${name}! Very important thing is "${contenthinio.important.sleep}" in Polish. That's mean sleep.`)
+  console.log(
+    `Hello my friend ${name}! Very important thing is "${contenthinio.important.sleep}" in Polish. That's mean sleep.`
+  );
 }
 
-greetAgain('Arek');
+greetAgain("Arek");
 
-if (0 ==0) {
-  console.log('To jest prawda');
-};
-
-if ('test' > 0) {
-  console.log('prawda');
-}
-if (!('test' > 0)) {
-    console.log('nie prawda');
+if (0 == 0) {
+  console.log("To jest prawda");
 }
 
-if ('test' > 0) {
-  console.log('prawda');
+if ("test" > 0) {
+  console.log("prawda");
 }
-else {
-    console.log('nie prawda po raz drugi (with else)');
+if (!("test" > 0)) {
+  console.log("nie prawda");
 }
 
-if (2 === '2') {
-  console.log('PRAWDA');
-} else if (2 !== '2') {
-  console.log('Prawda druga');
+if ("test" > 0) {
+  console.log("prawda");
 } else {
-  console.log('a może jednak nie prawda - pssikus! 😎');
+  console.log("nie prawda po raz drugi (with else)");
 }
 
-if ((2 == '2') && (1 == 1)) {
+if (2 === "2") {
+  console.log("PRAWDA");
+} else if (2 !== "2") {
+  console.log("Prawda druga");
+} else {
+  console.log("a może jednak nie prawda - pssikus! 😎");
+}
+
+if (2 == "2" && 1 == 1) {
   console.log('Czy to "i" && zadziała??');
 } else {
   console.log('jednak działa, ale teraz jest "else');
 }
 
-const somebody = 'somebodya';
+const somebody = "somebodya";
 
-if (('somebody' == somebody) || (2 > 1)) {
-  console.log('sama prawda, albo częsciowa za pomocą ||');
+if ("somebody" == somebody || 2 > 1) {
+  console.log("sama prawda, albo częsciowa za pomocą ||");
 } else {
-  console.log(somebody)
+  console.log(somebody);
 }
 
-switch (13+4) {
-  case 17: console.log('17 to jest ta liczba z pomocą "switch"');
-  break;
-  case 1: console.log('1 to jest ta liczba z pomocą "switch"');
-  break;
+switch (13 + 4) {
+  case 17:
+    console.log('17 to jest ta liczba z pomocą "switch"');
+    break;
+  case 1:
+    console.log('1 to jest ta liczba z pomocą "switch"');
+    break;
   default:
-    console.log('żadne z tych nie jest prawdą. Switch');
+    console.log("żadne z tych nie jest prawdą. Switch");
 }
 
-(2 > 3) ? console.log(true) : console.log(false);
+2 > 3 ? console.log(true) : console.log(false);
 
-const result = (2 !== '2') ? true : false;
+const result = 2 !== "2" ? true : false;
 
 console.log(result);
 /* Taka tam zabawa xD */
-const myRange = document.querySelector('.range--js');
-console.log(myRange.value)
-const rangeContent = document.querySelector('.range-content--js');
+const myRange = document.querySelector(".range--js");
+console.log(myRange.value);
+const rangeContent = document.querySelector(".range-content--js");
 rangeContent.innerHTML = `wybierasz ${myRange.value}`;
 
-const js7 = document.querySelector('.note__description--js7');
-js7.innerHTML = 'Dalej ciśniemy tabele';
+const js7 = document.querySelector(".note__description--js7");
+js7.innerHTML = "Dalej ciśniemy tabele";
 
-const button = document.querySelector('.action--js');
-
+const button = document.querySelector(".action--js");
 
 function buttonChange() {
-const myButton = document.querySelector('.note__description--click');
-myButton.innerHTML = 'Właśnie nauczyłem się zmieniać paragraf przez eventy w JS';
-console.log('kliknąłeś')
+  const myButton = document.querySelector(".note__description--click");
+  myButton.innerHTML =
+    "Właśnie nauczyłem się zmieniać paragraf przez eventy w JS";
+  console.log("kliknąłeś");
 }
 
-button.addEventListener('click', buttonChange);
+button.addEventListener("click", buttonChange);
 console.log(button);
 
-const button2 = document.querySelector('.action--js2');
-console.log(button2)
+const button2 = document.querySelector(".action--js2");
+console.log(button2);
 
 const change2 = () => {
-  const change = document.querySelector('.note__description--click2');
-  change.innerHTML = 'tym razem funkcja strzałkowa!! <3'
-}
+  const change = document.querySelector(".note__description--click2");
+  change.innerHTML = "tym razem funkcja strzałkowa!! <3";
+};
 
-button2.addEventListener('mouseleave', change2);
+button2.addEventListener("mouseleave", change2);
 
-const anotherButton = document.querySelector('.action--js3');
+const anotherButton = document.querySelector(".action--js3");
 
-anotherButton.addEventListener('click', (e) /* Może być bez "e" */=> {
-  const change = document.querySelector('.note__description--click3');
-  change.innerHTML = '<strong>lecimy</strong> z tematem'
-})
+anotherButton.addEventListener("click", (e) /* Może być bez "e" */ => {
+  const change = document.querySelector(".note__description--click3");
+  change.innerHTML = "<strong>lecimy</strong> z tematem";
+});
 
-const click4 = document.querySelector('.action--js4');
+const click4 = document.querySelector(".action--js4");
 
-click4.addEventListener('click', () => {
-  const click44 = document.querySelector('.note__description--click4');
-click44.classList.add('note__description--click4','test--js4');
-click44.innerHTML = 'hello world zmieniona treść i classy!';
-console.log('zmieniłeś klasę i treść')
-})
+click4.addEventListener("click", () => {
+  const click44 = document.querySelector(".note__description--click4");
+  click44.classList.add("note__description--click4", "test--js4");
+  click44.innerHTML = "hello world zmieniona treść i classy!";
+  console.log("zmieniłeś klasę i treść");
+});
 
 /*   function classChanger() {
   const click44 = document.querySelector('.note__description--click4');
@@ -253,10 +256,9 @@ click4.addEventListener('click', classChanger) */
 
 /* HAMBURGER1 TEST */
 
-const hamburger1 = document.querySelector('.hamburger1--js'); 
+const hamburger1 = document.querySelector(".hamburger1--js");
 
-hamburger1.addEventListener('click', () => {
-  const hamburgerShow = document.querySelector('.navigation1--js');
-  hamburgerShow.classList.toggle('navigation1--off');
-})
-
+hamburger1.addEventListener("click", () => {
+  const hamburgerShow = document.querySelector(".navigation1--js");
+  hamburgerShow.classList.toggle("navigation1--off");
+});
