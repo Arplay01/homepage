@@ -403,6 +403,10 @@ display: none;
     display: none;
   }
 
+  .menu--off {
+    display: none;
+  }
+
   .navigation {
     padding: 15px 20px;
   }
