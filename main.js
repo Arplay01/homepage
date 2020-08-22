@@ -270,6 +270,6 @@ hamburgerButton.addEventListener('click', function () {
   navigation.classList.toggle('navigation--off');
   const navigationLogo = document.querySelector('.note__picture--box-model-logo')
   navigationLogo.classList.toggle('note__picture--box-model-logo--js')
-  const navigationDescription = document.querySelector('.menu--js')
-  navigationDescription = document.classList.toggle('menu--off')
+/*   const navigationDescription = document.querySelector('.menu--js')
+  navigationDescription = document.classList.toggle('menu--off') */
 });
