@@ -22,6 +22,55 @@ body {
   margin: 0;
 }
 
+.pseudo {
+  position: relative;
+}
+
+.note__title--pseudo::before {
+  content: '😎';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: rgb(105, 71, 255);
+  position: absolute;
+  top: 0px;
+  right: 50px;
+  z-index: 1;
+
+}
+
+.note__title--pseudo::after {
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: tomato;
+  position: absolute;
+  top: 60px;
+  right: 50px;
+  z-index: 0;
+}
+
+.note__description-pseudo::first-letter {
+font-size: 20px;
+float: left;
+height: 20px;
+margin: 0 10px 0 0;
+padding: 6px;
+background: black;
+box-shadow: 3px 3px 0 red;
+color: white;
+}
+
+.input--pseudo:focus {
+  background: green;
+  color: white;
+  border: 12px solid rgb(112, 246, 112);
+}
+
+
+
+
 @media screen and (max-width: 768px) {
 
 /* MOBILE FIRST */
@@ -562,3 +611,4 @@ display: none;
   }
   
 }
+
