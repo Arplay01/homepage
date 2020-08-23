@@ -68,13 +68,6 @@ color: white;
   border: 12px solid rgb(112, 246, 112);
 }
 
-
-
-
-@media screen and (max-width: 768px) {
-
-/* MOBILE FIRST */
-
 body {
   font-size: 1.1rem;
   line-height: 1.5;
@@ -106,6 +99,39 @@ body {
 .note__title {
   text-decoration: line-through;
   margin: 0 0 10px 0;
+}
+
+.pseudo__container {
+  position: relative;
+  width: 100%;
+}
+
+.note__title--element {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+}
+
+.note__title--element::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  border-bottom: 2px solid #333333;
+  width: 60%;
+}
+
+.note__title--element::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -5px;
+  right: 0;
+  border-bottom: 2px solid #333333;
+  width: 60%;
 }
 
 .note__picture--phone {
@@ -158,76 +184,6 @@ position: relative;
   padding: 10px;
   border-radius: 100%;
   box-shadow: 6px 6px 16px 0px #d9a892, -6px -6px 26px 0px #ffe4c6; ;
-}
-
-.top {
-  background: #fefefef5;
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 2000;
-}
-
-.navigation {
-  padding: 15px 20px;
-}
-
-.note--box-model2 {
-  max-width: 600px;
-  background-color: #ffc6ac;
-  /* border: 0.5px solid #3333336e; */
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 6px 6px 16px 0px #d9a892, -6px -6px 26px 0px #ffe4c6;
-}
-
-.hamburger-button {
-  background: none;
-  border: none;
-  position: fixed;
-  top: 5px;
-  right: 5px;
-  width: 100px;
-  height: 100px;
-  z-index: 2000;
-}
-
-.navigation {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  box-shadow: 10px 15px 16px 20px #fefefef5;
-}
-
-.navigation--off {
-display: none;
-}
-
-.navigation__link {
-  text-decoration: none;
-  background: #fefefe;
-  font-size: 1rem;
-  text-align: center;
-  /*   border: 1px solid #3333; */
-  width: 50vw;
-  padding: 8px 1rem;
-  margin: 12px;
-  color: #571616;
-  border-radius: 30px;
-  box-shadow: 8px 8px 18px 0px #d9a892, -8px -8px 26px 0px #ffe4c6;
-}
-
-.menu {
-  color: #571616;
-  font-weight: bold;
-}
-
-.navigation__link:hover {
-  box-shadow: inset 4px 4px 12px #d9a892, inset -4px -4px 21px #ffe4c6;
 }
 
 .footer {
@@ -347,10 +303,81 @@ display: none;
   grid-template-columns: 1fr;
   column-gap: 10px;
   row-gap: 10px;
- }
 
   /* END OF MOBILE */
 
+}
+
+@media screen and (max-width: 768px) {
+  .top {
+    background: #fefefef5;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000;
+  }
+  
+  .navigation {
+    padding: 15px 20px;
+  }
+  
+  .note--box-model2 {
+    max-width: 600px;
+    background-color: #ffc6ac;
+    /* border: 0.5px solid #3333336e; */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 6px 6px 16px 0px #d9a892, -6px -6px 26px 0px #ffe4c6;
+  }
+  
+  .hamburger-button {
+    background: none;
+    border: none;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    width: 100px;
+    height: 100px;
+    z-index: 2000;
+  }
+  
+  .navigation {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 10px 15px 16px 20px #fefefef5;
+  }
+  
+  .navigation--off {
+  display: none;
+  }
+  
+  .navigation__link {
+    text-decoration: none;
+    background: #fefefe;
+    font-size: 1rem;
+    text-align: center;
+    /*   border: 1px solid #3333; */
+    width: 50vw;
+    padding: 8px 1rem;
+    margin: 12px;
+    color: #571616;
+    border-radius: 30px;
+    box-shadow: 8px 8px 18px 0px #d9a892, -8px -8px 26px 0px #ffe4c6;
+  }
+  
+  .menu {
+    color: #571616;
+    font-weight: bold;
+  }
+  
+  .navigation__link:hover {
+    box-shadow: inset 4px 4px 12px #d9a892, inset -4px -4px 21px #ffe4c6;
+  }
 }
 
 @media screen and (max-width: 374px) {
@@ -385,6 +412,10 @@ display: none;
   .note__title {
     text-decoration: line-through;
     margin: 0 0 20px 0;
+  }
+
+  .note__title--element {
+    text-decoration: none;
   }
   
   .note__picture--phone {
