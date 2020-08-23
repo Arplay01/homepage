@@ -1,10 +1,11 @@
 {
   "name": "homepage",
   "version": "1.0.0",
-  "description": "",
   "main": "main.js",
   "scripts": {
+    "start": "node-sass -w style.scss style.css",
     "krowa": "npx cowsay -* hi my friend",
+    "deadcow": "npx cowsay -d hello...",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +21,9 @@
   "homepage": "https://github.com/Arplay01/homepage#readme",
   "dependencies": {
     "normalize": "^0.3.1"
-  }
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "description": ""
 }
