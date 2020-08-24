@@ -1,3 +1,6 @@
+@import "modules/note.scss";
+@import "modules/grid.scss";
+
 $background-color: #ffc6ac;
 $font-color: #014553;
 $article-background1: #333;
@@ -30,41 +33,6 @@ body {
   position: relative;
 }
 
-.note__title--pseudo::before {
-  content: "😎";
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  background: rgb(105, 71, 255);
-  position: absolute;
-  top: 0px;
-  right: 50px;
-  z-index: 1;
-}
-
-.note__title--pseudo::after {
-  content: "";
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  background: tomato;
-  position: absolute;
-  top: 60px;
-  right: 50px;
-  z-index: 0;
-}
-
-.note__description-pseudo::first-letter {
-  font-size: 20px;
-  float: left;
-  height: 20px;
-  margin: 0 10px 0 0;
-  padding: 6px;
-  background: black;
-  box-shadow: 3px 3px 0 red;
-  color: white;
-}
-
 .input--pseudo:focus {
   background: green;
   color: white;
@@ -86,89 +54,6 @@ body {
   }
 }
 
-.note {
-  background-color: #eba6a9ff;
-  margin: 20px 0;
-  padding: 16px;
-  border-radius: 12px;
-  overflow: scroll;
-
-  &__picture {
-    &--box-model {
-      display: block;
-      box-sizing: border-box;
-      width: 100px;
-      height: 100px;
-      float: left;
-      margin: 0 20px 0 0;
-      border-radius: 5px;
-    }
-    &--box-model2 {
-      width: 50px;
-      height: 50px;
-      position: absolute;
-      top: 5px;
-      right: 5px;
-    }
-    &--box-model-logo {
-      max-width: 100%;
-      z-index: 3000;
-      position: relative;
-    }
-    &--box-model-logo--js {
-      background: #ffc6ac;
-      padding: 10px;
-      border-radius: 100%;
-      box-shadow: 6px 6px 16px 0px #d9a892, -6px -6px 26px 0px #ffe4c6;
-    }
-    &--phone {
-      max-width: 100%;
-    }
-  }
-
-  &__title {
-    text-decoration: line-through;
-    margin: 0 0 10px 0;
-
-    &--element {
-      display: block;
-      position: relative;
-      text-decoration: none;
-      text-align: center;
-      width: 100%;
-    }
-    &--element::before {
-      content: "";
-      display: block;
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      border-bottom: 2px solid #333333;
-      width: 60%;
-    }
-    &--element::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: -5px;
-      right: 0;
-      border-bottom: 2px solid #333333;
-      width: 60%;
-    }
-    &--off {
-      display: none;
-    }
-  }
-  &--box-model {
-    position: relative;
-    box-sizing: border-box;
-    padding: 15px 15px;
-    margin: 20px 0;
-    border: 1px solid #571616;
-    border-radius: 10px;
-    line-height: 1.5;
-  }
-}
 
 .pseudo__container {
   position: relative;
@@ -196,43 +81,7 @@ code {
   max-width: 100%;
 }
 
-.grid {
-  margin: 8px;
-  border: 1px solid #3333;
-  box-sizing: border-box;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "header"
-    "main"
-    "aside"
-    "footer"
-    "footer2";
-  grid-template-rows: none;
-  row-gap: 8px;
-  padding: 8px;
 
-  &__item {
-    border: 3px solid #3333;
-
-    &--header {
-      background: #3333;
-      grid-area: header;
-    }
-    &--main {
-      grid-area: main;
-    }
-    &--aside {
-      grid-area: aside;
-    }
-    &--footer {
-      grid-area: footer;
-    }
-    &--footer2 {
-      grid-area: footer2;
-    }
-  }
-}
 
 .test--js4 {
   background-color: teal;
@@ -281,16 +130,6 @@ code {
   }
 }
 
-.grid-header {
-  text-align: center;
-}
-
-.grid-practice__container {
-  display: grid;
-  grid-template-columns: 1fr;
-  column-gap: 10px;
-  row-gap: 10px;
-}
 .top {
   display: block;
   position: fixed;
@@ -445,28 +284,7 @@ code {
       box-shadow: inset 4px 4px 12px #d9a892, inset -4px -4px 21px #ffe4c6;
     }
   }
-
-  .grid {
-    margin: 16px;
-    border: 3px solid #3333;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 2fr 30px 1fr;
-    grid-template-rows: 100px 200px 50px 50px;
-    column-gap: 16px;
-    row-gap: 16px;
-    padding: 16px;
-    grid-template-areas:
-      "header header header"
-      "main . aside"
-      "footer footer footer"
-      "footer2 footer2 footer2";
-  }
-
-  .grid-practice__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 10px;
-  }
+  
 }
+
+  

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "start": "node-sass -w style.scss style.css",
+    "start": "node-sass -w scss/style.scss style.css",
     "krowa": "npx cowsay -* hi my friend",
     "deadcow": "npx cowsay -d hello...",
     "test": "echo \"Error: no test specified\" && exit 1"
