@@ -123,6 +123,8 @@ body {
       right: 0;
       border-bottom: 2px solid #333333;
       width: 60%; }
+    .note__title--off {
+      display: none; }
   .note--box-model {
     position: relative;
     box-sizing: border-box;

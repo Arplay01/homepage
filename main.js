@@ -273,3 +273,10 @@ hamburgerButton.addEventListener('click', function () {
 /*   const navigationDescription = document.querySelector('.menu--js')
   navigationDescription = document.classList.toggle('menu--off') */
 });
+
+const showTitle = document.querySelector('.button--js11');
+
+showTitle.addEventListener('click', () => {
+  const title = document.querySelector('.note__title--js11')
+  title.classList.toggle('note__title--off')
+})
